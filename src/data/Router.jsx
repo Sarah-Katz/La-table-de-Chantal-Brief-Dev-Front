@@ -4,13 +4,11 @@ import Menu from '../component/menu/Menu';
 import Contact from '../component/contact/Contact';
 
 export default function Router() {
-  const food = 'food';
-  const drink = 'drink';
   return (
-    <Routes>    
+    <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/menufood" element={<Menu type={food} />} />
-      <Route path="/menudrink" element={<Menu type={drink} />} />
+      <Route path="/menufood" element={<Menu key="food" isFood={true} />} />
+      <Route path="/menudrink" element={<Menu key="drink" isFood={false} />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
   );
