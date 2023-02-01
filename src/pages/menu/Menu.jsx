@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import uuid from "react-uuid";
 import Header from "../../component/header/Header";
+import Footer from "../../component/footer/Footer";
 import Item from "../../component/item/Item";
 import { starters } from "../../data/items/Starters";
 import { meals } from "../../data/items/Meals";
 import { desserts } from "../../data/items/Desserts";
 import { drinks } from "../../data/items/Drinks";
-import Footer from "../../component/footer/footer";
 
 function Menu({ isFood }) {
     const [category, setCategory] = useState();
