@@ -10,6 +10,7 @@ import { drinks } from "../../data/items/Drinks";
 function Menu({ isFood }) {
     const [category, setCategory] = useState();
     const [items, setItems] = useState([]);
+    const foodlink = document.getElementById('foodlink');
 
     useEffect(() => {
         if (!category && !isFood) {
@@ -24,6 +25,11 @@ function Menu({ isFood }) {
             setItems(drinks);
         }
     }, [category, isFood]);
+
+     foodlink.addEventListener('click', (e) => {
+        setCategory('');
+        setItems([]);
+     });
 
     if (!category) {
         return (
