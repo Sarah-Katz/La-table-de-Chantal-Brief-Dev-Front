@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import uuid from "react-uuid";
-import Header from "../header/Header";
-import Item from "../item/Item";
+import Header from "../../component/header/Header";
+import Item from "../../component/item/Item";
 import { starters } from "../../data/items/Starters";
 import { meals } from "../../data/items/Meals";
 import { desserts } from "../../data/items/Desserts";
 import { drinks } from "../../data/items/Drinks";
+import Footer from "../../component/footer/footer";
 
 function Menu({ isFood }) {
     const [category, setCategory] = useState();
@@ -26,10 +27,10 @@ function Menu({ isFood }) {
         }
     }, [category, isFood]);
 
-     foodlink.addEventListener('click', (e) => {
+    foodlink.addEventListener('click', (e) => {
         setCategory('');
         setItems([]);
-     });
+    });
 
     if (!category) {
         return (
@@ -38,17 +39,19 @@ function Menu({ isFood }) {
                 <button onClick={() => setCategory("starters")}>Starters</button>
                 <button onClick={() => setCategory("meals")}>Meals</button>
                 <button onClick={() => setCategory("desserts")}>Desserts</button>
+                <Footer />
             </div>
         );
     } else {
         return (
             <div>
                 <Header />
-                <div key={uuid()}>
+                <div className="menu-items" key={uuid()}>
                     {items.map((item) => (
                         <Item key={uuid()} name={item.name} price={item.price} />
                     ))}
                 </div>
+                <Footer />
             </div>
         );
     }
