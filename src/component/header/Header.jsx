@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
     return (
         <header>
-            <img src="/images/logo.png" alt="Logo La table de Chantal" />
+            <img src="/images/logo/logo.png" alt="Logo La table de Chantal" />
             <nav>
                 <Link to="/">Accueil</Link>
                 <Link id="foodlink" to="/menufood">Carte des plats</Link>

@@ -10,7 +10,7 @@ export const images = [{
     alt: ''
 }, {
     id: uuid(),
-    src: '/images/sliders/innerrestaurant.jpg',
+    src: '/images/sliders/inner_restaurant.jpg',
     alt: ''
 }
 ];
