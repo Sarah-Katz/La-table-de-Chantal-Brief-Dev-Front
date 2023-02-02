@@ -7,6 +7,7 @@ import { starters } from "../../data/items/Starters";
 import { meals } from "../../data/items/Meals";
 import { desserts } from "../../data/items/Desserts";
 import { drinks } from "../../data/items/Drinks";
+import Contact from "../contact/Contact";
 
 function Menu({ isFood }) {
     const [category, setCategory] = useState();
@@ -46,6 +47,7 @@ function Menu({ isFood }) {
         return (
             <div>
                 <Header />
+                <Contact />
                 <div className="menu-items" key={uuid()}>
                     {items.map((item) => (
                         <Item key={uuid()} name={item.name} price={item.price} image={item.image}/>
