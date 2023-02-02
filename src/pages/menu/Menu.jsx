@@ -48,7 +48,7 @@ function Menu({ isFood }) {
                 <Header />
                 <div className="menu-items" key={uuid()}>
                     {items.map((item) => (
-                        <Item key={uuid()} name={item.name} price={item.price} />
+                        <Item key={uuid()} name={item.name} price={item.price} image={item.image}/>
                     ))}
                 </div>
                 <Footer />

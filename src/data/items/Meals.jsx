@@ -1,26 +1,26 @@
 export const meals = [{
     category: 'plat',
-    name: 'Steak',
-    price: '$12',
-    image: '/images/article/steak.jpg'
+    name: 'Salade du moment',
+    price: '19€',
+    image: '/images/articles/meals/eggsSaladBowl.jpg'
 }, {
     category: 'plat',
-    name: 'Chicken Alfredo',
-    price: '$15',
-    image: '/images/article/chicken_alfredo.jpg'
+    name: 'Poulet grillé sur son lit de pommes de terres',
+    price: '23€',
+    image: '/images/articles/meals/roastedChickenandPotatoes.jpg'
 }, {
     category: 'plat',
-    name: 'Seafood Paella',
-    price: '$18',
-    image: '/images/article/seafood_paella.jpg'
+    name: 'Saumon fumé',
+    price: '29€',
+    image: '/images/articles/meals/roastedSalmon.jpg'
 }, {
     category: 'plat',
-    name: 'Lasagna',
-    price: '$10',
-    image: '/images/article/lasagna.jpg'
+    name: 'Crevettes fraîches sur crudités',
+    price: '27€',
+    image: '/images/articles/meals/shrimpandRiceBowl.jpg'
 }, {
     category: 'plat',
-    name: 'Sushi Platter',
-    price: '$20',
-    image: '/images/article/sushi_platter.jpg'
+    name: 'Spécialité du chef (Spaghettis, parmesan, légumes provençal)',
+    price: '22€',
+    image: '/images/articles/meals/spaghettiParmiggiano.jpg'
 }];
