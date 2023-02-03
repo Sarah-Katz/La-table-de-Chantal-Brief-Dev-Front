@@ -12,15 +12,14 @@
     background: var(--mainThemeColor);
     box-shadow: 2px 2px 20px black;
     color: var(--FontColor);
-    left: -10%;
-}
-
-.contact-container .active{
-    transform: translateX(100%);
+    right: -33%;
     transition: all 0.5s ease-in-out;
-
 }
 
+.contact-container.active{
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+}
 
 form{
     flex-shrink: 0;

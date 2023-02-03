@@ -5,15 +5,15 @@ import Contact from "../../component/contact/Contact";
 export default function Header() {
     const [isVisible, setVisible] = useState(true);
 
-    const handlevisible = (value) => {
+    const handleVisible = (value) => {
         setVisible(value);
     };
 
     const toggleVisible = () => {
         if (isVisible) {
-            handlevisible(false);
+            handleVisible(false);
         } else {
-            handlevisible(true);
+            handleVisible(true);
         }
     };
 
@@ -26,7 +26,7 @@ export default function Header() {
                 <Link className="header-link" to="/menudrink">Carte des boissons</Link>
                 <button className="header-link" id="contact-link" onClick={toggleVisible}>Nous contacter</button>
             </nav>
-            <Contact isVisible={isVisible} />
+            <Contact isVisible={isVisible} toggleVisible={toggleVisible} />
         </header>
     )
 }
