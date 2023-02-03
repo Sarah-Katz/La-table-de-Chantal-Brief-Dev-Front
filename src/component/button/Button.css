@@ -1,0 +1,11 @@
+.slider-icon{
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-icon:hover{
+    transform: scale(1.5);
+    transition: 0.5s ease-in-out;
+}

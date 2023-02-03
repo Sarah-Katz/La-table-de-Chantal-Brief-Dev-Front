@@ -7,6 +7,7 @@ The Button component takes in 4 props:
 */
 
 import React from 'react';
+import "./Button.css"
 import { FaArrowLeft, FaArrowRight, FaPlay, FaPause } from 'react-icons/fa';
 
 function Button({ onClick, buttonType, disabled, autoPlay }) {
@@ -17,7 +18,7 @@ function Button({ onClick, buttonType, disabled, autoPlay }) {
     } else if (buttonType === 'next') {
         icon = <FaArrowRight />;
     } else if (buttonType === "autoPlay") {
-        icon = autoPlay ? <FaPause /> : <FaPlay />;
+         icon = autoPlay ? <FaPause /> : <FaPlay />;
     }
 
     return (
@@ -25,7 +26,7 @@ function Button({ onClick, buttonType, disabled, autoPlay }) {
             className={`${buttonType}-button ${disabled ? 'disabled' : ''}`}
             onClick={onClick}
             disabled={disabled}>
-            {icon}
+            <div className='slider-icon'>{icon}</div>
         </button>
     );
 }
