@@ -7,6 +7,7 @@ import { starters } from "../../data/items/Starters";
 import { meals } from "../../data/items/Meals";
 import { desserts } from "../../data/items/Desserts";
 import { drinks } from "../../data/items/Drinks";
+import Contact from "../contact/Contact";
 import './Menu.css'
 import Starter from './mozzatomatoe.jpg'
 import Meal from './roastedSalmon.jpg'
