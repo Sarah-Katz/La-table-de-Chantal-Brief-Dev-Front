@@ -1,15 +1,14 @@
-import Footer from "../../component/footer/Footer"
-import Header from "../../component/header/Header"
-import Slider from "../../component/slider/Slider"
-import "../../component/slider/Slider.css"
-import { images } from "../../data/slider-images"
-import Contact from "../contact/Contact"
+import Footer from "../../component/footer/Footer";
+import Header from "../../component/header/Header";
+import Slider from "../../component/slider/Slider";
+import "../../component/slider/Slider.css";
+import { images } from "../../data/slider-images";
+import Contact from "../contact/Contact";
 
 export default function Home() {
     return (
         <div>
             <Header />
-            <Contact />
             <Slider images={images} />
             <main>
                 <p className="description-restaurant">"Bienvenue au restaurant gastronomique, La table de Chantal, où l'expérience culinaire rencontre la passion du vin. Nous offrons une cuisine inventive et délicate, associée à une sélection éclectique de vins rares et fins pour créer un mariage parfait d'arômes et de saveurs. Notre équipe de chefs talentueux utilise des ingrédients de première qualité pour créer des plats qui subliment les saveurs naturelles des aliments.

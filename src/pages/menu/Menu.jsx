@@ -47,7 +47,6 @@ function Menu({ isFood }) {
         return (
             <div>
                 <Header />
-                <Contact />
                 <div className="menu-items" key={uuid()}>
                     {items.map((item) => (
                         <Item key={uuid()} name={item.name} price={item.price} image={item.image}/>

@@ -1,6 +1,0 @@
-.contact-container {
-    visibility: hidden;
-}
-.contact-container.visible {
-    visibility: visible;
-}
