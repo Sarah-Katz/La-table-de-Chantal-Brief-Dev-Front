@@ -1,7 +1,31 @@
-/* form{
+/* preset  */
+:root {
+    --mainThemeColor: #141924;
+    --FontColor: #FFFF;
+  }
+  
+.contact-container{
+    z-index: 12;
+    position: fixed;
+    width: 33%;
+    height: 100vh;
+    background: var(--mainThemeColor);
+    box-shadow: 2px 2px 20px black;
+    color: var(--FontColor);
+    left: -10%;
+}
+
+.contact-container .active{
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+form{
     flex-shrink: 0;
     width: 90%;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 50px auto ;
     display: flex;
     flex-flow: column;
@@ -66,6 +90,7 @@ button.form-button:hover{
     width: 100%;
     margin-bottom: 50px;
     border-radius: 5px;
+    border: none;
 }
 
- */
+

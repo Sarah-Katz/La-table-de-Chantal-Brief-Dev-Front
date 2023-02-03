@@ -51,7 +51,7 @@ export default function Form() {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
             <div className="form-input">
                 <label htmlFor="name">Nom:</label>
                 <input

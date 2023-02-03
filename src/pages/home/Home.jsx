@@ -3,7 +3,6 @@ import Header from "../../component/header/Header";
 import Slider from "../../component/slider/Slider";
 import "../../component/slider/Slider.css";
 import { images } from "../../data/slider-images";
-import Contact from "../contact/Contact";
 
 export default function Home() {
     return (

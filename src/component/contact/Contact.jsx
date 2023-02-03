@@ -1,7 +1,9 @@
-import Form from "../../component/form/Form"
+import './Contact.css'
+
+import Form from "../form/Form"
 
 export default function Contact({ isVisible }) {
-console.log(isVisible);
+// console.log(isVisible);
     if (isVisible) {
         return (
             <div id="contact-container" className="contact-container">

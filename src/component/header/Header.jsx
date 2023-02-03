@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Contact from "../../pages/contact/Contact";
+import Contact from "../../component/contact/Contact";
 
 export default function Header() {
     const [isVisible, setVisible] = useState(true);

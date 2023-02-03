@@ -66,6 +66,8 @@ main {
   width: 90%;
   min-height: 100%;
   margin: 25px auto;
+  /* display: flex;
+  flex-flow: column; */
 }
 
 p.description-restaurant, p.description-chef{
