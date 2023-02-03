@@ -8,6 +8,10 @@ import { meals } from "../../data/items/Meals";
 import { desserts } from "../../data/items/Desserts";
 import { drinks } from "../../data/items/Drinks";
 import Contact from "../contact/Contact";
+import './Menu.css'
+import Starter from './mozzatomatoe.jpg'
+import Meal from './roastedSalmon.jpg'
+import Dessert from './oreo.jpg'
 
 function Menu({ isFood }) {
     const [category, setCategory] = useState();
@@ -37,9 +41,11 @@ function Menu({ isFood }) {
         return (
             <div>
                 <Header />
-                <button onClick={() => setCategory("starters")}>Starters</button>
-                <button onClick={() => setCategory("meals")}>Meals</button>
-                <button onClick={() => setCategory("desserts")}>Desserts</button>
+                <div  className="button-group-meals">
+                <button><img className="menu-btn" src={Starter} alt="Starter Meal" onClick={() => setCategory("starters")}/><div className="bgmTxt">Starters</div></button>
+                <button><img  className="menu-btn" src={Meal} alt="meal" onClick={() => setCategory("meals")}/><div className="bgmTxt">Meals</div></button>
+                <button><img className="menu-btn" src={Dessert} alt="dessert"onClick={() => setCategory("desserts")}/><div className="bgmTxt">Desserts</div></button>
+                </div>
                 <Footer />
             </div>
         );

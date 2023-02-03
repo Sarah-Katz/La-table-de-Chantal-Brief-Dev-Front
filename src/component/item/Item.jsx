@@ -1,3 +1,5 @@
+import './Item.css'
+
 export default function Item({ name, price, image }) {
     return (
         <div className="item">
