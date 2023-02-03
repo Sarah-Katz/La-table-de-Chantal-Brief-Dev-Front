@@ -1,8 +1,8 @@
-import Footer from "../../component/footer/Footer"
-import Header from "../../component/header/Header"
-import Slider from "../../component/slider/Slider"
-import "../../component/slider/Slider.css"
-import { images } from "../../data/slider-images"
+import Footer from "../../component/footer/Footer";
+import Header from "../../component/header/Header";
+import Slider from "../../component/slider/Slider";
+import "../../component/slider/Slider.css";
+import { images } from "../../data/slider-images";
 
 export default function Home() {
     return (

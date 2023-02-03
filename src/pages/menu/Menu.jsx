@@ -41,9 +41,9 @@ function Menu({ isFood }) {
             <div>
                 <Header />
                 <div  className="button-group-meals">
-                <button><img className="menu-btn" src={Starter} alt="Starter Meal" onClick={() => setCategory("starters")}/><div className="bgmTxt">Starters</div></button>
-                <button><img  className="menu-btn" src={Meal} alt="meal" onClick={() => setCategory("meals")}/><div className="bgmTxt">Meals</div></button>
-                <button><img className="menu-btn" src={Dessert} alt="dessert"onClick={() => setCategory("desserts")}/><div className="bgmTxt">Desserts</div></button>
+                <button className="menu-btn"><img src={Starter} alt="Starter Meal" onClick={() => setCategory("starters")}/><div className="bgmTxt">Starters</div></button>
+                <button className="menu-btn"><img src={Meal} alt="meal" onClick={() => setCategory("meals")}/><div className="bgmTxt">Meals</div></button>
+                <button className="menu-btn"><img src={Dessert} alt="dessert"onClick={() => setCategory("desserts")}/><div className="bgmTxt">Desserts</div></button>
                 </div>
                 <Footer />
             </div>

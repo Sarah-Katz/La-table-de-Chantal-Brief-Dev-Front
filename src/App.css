@@ -66,20 +66,25 @@ main {
   width: 90%;
   min-height: 100%;
   margin: 25px auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 p.description-restaurant, p.description-chef{
-  margin-bottom: 10px;
+  width: 45%;
+  height: 150px;
+  margin: 10px;
   background: var(--mainThemeColor);
   padding: 15px;
   border-radius: 3px;
   color: var(--FontColor);
-  text-align: justify;
   overflow: scroll;
 }
 
 footer {
-  height: 63px;
+  height: 50px;
   width: 100%;
   background: var(--mainThemeColor);
   box-shadow: 2px 2px 20px black;

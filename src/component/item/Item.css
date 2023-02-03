@@ -26,9 +26,9 @@
     flex-flow: column;
     justify-content: start;
     align-items: center;
-    background: var(--FontColor);
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 3px;
-    opacity: 0.5;
+    
 }
 
 .item:hover{
