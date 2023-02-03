@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Contact from "../../component/contact/Contact";
+import './Header.css'
 
 export default function Header() {
-    const [isVisible, setVisible] = useState(true);
+    const [isVisible, setVisible] = useState(false);
 
     const handleVisible = (value) => {
         setVisible(value);
