@@ -10,20 +10,20 @@
     width: 33%;
     height: 100vh;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: var(--mainThemeColor);
     box-shadow: 2px 2px 20px black;
     color: var(--FontColor);
     right: -33%;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
     
 }
 
 .contact-container.active{
     transform: translateX(-100%);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 button.contact-close-button{
@@ -33,8 +33,8 @@ button.contact-close-button{
 
 .contact-close-button{
     position: absolute;
-    top:25px;
-    left: 25px;
+    top:15px;
+    left: 15px;
     font-size: 32px;
     color: var(--FontColor);
 }
@@ -44,9 +44,9 @@ button.contact-close-button{
 }
 
 form{
+    height: 60vh;
     flex-shrink: 0;
     width: 90%;
-    margin: 100px auto 0;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -55,33 +55,37 @@ form{
 
 .form-input{
     width: 90%;
-    margin-top: 25px;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: center; 
     align-items: flex-start;   
 }
 
-input{
+.form-input p {
+    color: red;
+}
+
+.form-input input{
     border-radius: 5px;
 }
 
 .form label{
-    padding-right: 10px;
+    margin: 5px 0;
     text-align: center;
 }
 
 .form-input textarea{
     resize: none;
-    width: 80%;
+    width: 100%;
     height: 150px;
     border-radius: 5px;
 }
 
 button.form-button{
+    border: none;
     width: 100px;
     height: 40px;
-    margin: 25px auto;
+    margin: 10px auto;
     padding: 5px;
     border-radius: 3px;
     background: #3e3e3e;
@@ -93,7 +97,7 @@ button.form-button{
 button.form-button:hover{
     background: #fff;
     color: #000;
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: all 0.5s ease-in-out;
 }
 
@@ -108,6 +112,7 @@ button.form-button:hover{
 }
 
 .contact-map{
+    height: 330px;
     width: 100%;
     margin-bottom: 50px;
     border-radius: 5px;
