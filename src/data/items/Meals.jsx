@@ -5,7 +5,7 @@ export const meals = [{
     image: '/images/articles/meals/eggsSaladBowl.jpg'
 }, {
     category: 'plat',
-    name: 'Poulet grillé sur son lit de pommes de terres',
+    name: 'Poulet grillé et pommes de terre',
     price: '23€',
     image: '/images/articles/meals/roastedChickenandPotatoes.jpg'
 }, {
@@ -20,7 +20,7 @@ export const meals = [{
     image: '/images/articles/meals/shrimpandRiceBowl.jpg'
 }, {
     category: 'plat',
-    name: 'Spécialité du chef (Spaghettis, parmesan, légumes provençal)',
+    name: 'Spaghettis, parmesan, légumes provençal',
     price: '22€',
     image: '/images/articles/meals/spaghettiParmiggiano.jpg'
 }];

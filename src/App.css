@@ -59,13 +59,14 @@ nav a:hover {
 
 .slider-container {
   width: 100%;
+  height: 68vh;
 }
 
 main {
   flex-grow: 10;
   width: 90%;
   min-height: 100%;
-  margin: 25px auto;
+  margin: 0 auto;
   display: flex;
   flex-flow: row;
   justify-content: space-around;
@@ -75,15 +76,16 @@ main {
 p.description-restaurant, p.description-chef{
   width: 45%;
   height: 150px;
-  margin: 10px;
+  margin: 7px 10px;
   background: var(--mainThemeColor);
   padding: 15px;
   border-radius: 3px;
   color: var(--FontColor);
-  overflow: scroll;
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
   height: 50px;
   width: 100%;
   background: var(--mainThemeColor);

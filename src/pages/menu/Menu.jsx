@@ -40,10 +40,19 @@ function Menu({ isFood }) {
         return (
             <div>
                 <Header />
-                <div  className="button-group-meals">
-                <button className="menu-btn"><img src={Starter} alt="Starter Meal" onClick={() => setCategory("starters")}/><div className="bgmTxt">Starters</div></button>
-                <button className="menu-btn"><img src={Meal} alt="meal" onClick={() => setCategory("meals")}/><div className="bgmTxt">Meals</div></button>
-                <button className="menu-btn"><img src={Dessert} alt="dessert"onClick={() => setCategory("desserts")}/><div className="bgmTxt">Desserts</div></button>
+                <div className="button-group-meals">
+                    <button className="menu-btn">
+                        <img className="menu-cat-img" src={Starter} alt="Starter Meal" onClick={() => setCategory("starters")} />
+                        <div className="bgmTxt">Entrées</div>
+                    </button>
+                    <button className="menu-btn">
+                        <img className="menu-cat-img" src={Meal} alt="meal" onClick={() => setCategory("meals")} />
+                        <div className="bgmTxt">Plats</div>
+                    </button>
+                    <button className="menu-btn">
+                        <img className="menu-cat-img" src={Dessert} alt="dessert" onClick={() => setCategory("desserts")} />
+                        <div className="bgmTxt">Desserts</div>
+                    </button>
                 </div>
                 <Footer />
             </div>
@@ -54,7 +63,7 @@ function Menu({ isFood }) {
                 <Header />
                 <div className="menu-items" key={uuid()}>
                     {items.map((item) => (
-                        <Item key={uuid()} name={item.name} price={item.price} image={item.image}/>
+                        <Item key={uuid()} name={item.name} price={item.price} image={item.image} />
                     ))}
                 </div>
                 <Footer />

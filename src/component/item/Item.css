@@ -8,7 +8,7 @@
     flex-shrink: 0;
     flex-grow: 1;
     width: 90%;
-    height: 90vh;
+    height: 85vh;
     margin: 15px auto;
     background: var(--mainThemeColor);
     border-radius: 3px;
@@ -26,26 +26,36 @@
     flex-flow: column;
     justify-content: start;
     align-items: center;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgb(255, 255, 255);
     border-radius: 3px;
-    
+    transition:all 0.5s ease-in-out;   
+    opacity: 0.8; 
 }
 
 .item:hover{
-    transform: scale(1.1);
+    transform: scale(1.15);
     opacity: 1;
     transition:all 0.5s ease-in-out;
 }
 
 .item-image{
+    object-fit: cover;
     width: 200px;
     height: 250px;
     border-radius: 3px;
 }
+
+.item-infos {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 .item-name{
-    margin-top: 5px;
+    margin: 5px;
 }
 
 .item-price{
-    margin-top: 5px;
+    font-size: 1.1em;
+    margin: 5px;
 }
