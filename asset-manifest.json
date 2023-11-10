@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/la-table-de-chantal/static/css/main.12ebbfe8.css",
+    "main.js": "/la-table-de-chantal/static/js/main.0b17c306.js",
+    "static/media/oreo.jpg": "/la-table-de-chantal/static/media/oreo.bc12ae67fb0e52dd9aaa.jpg",
+    "static/media/mozzatomatoe.jpg": "/la-table-de-chantal/static/media/mozzatomatoe.e70c1f9ce9baef4b11a5.jpg",
+    "static/media/roastedSalmon.jpg": "/la-table-de-chantal/static/media/roastedSalmon.8f4464da82db191dd0ed.jpg",
+    "index.html": "/la-table-de-chantal/index.html",
+    "main.12ebbfe8.css.map": "/la-table-de-chantal/static/css/main.12ebbfe8.css.map",
+    "main.0b17c306.js.map": "/la-table-de-chantal/static/js/main.0b17c306.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12ebbfe8.css",
+    "static/js/main.0b17c306.js"
+  ]
+}
